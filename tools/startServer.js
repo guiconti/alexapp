@@ -10,8 +10,6 @@ const PORT = process.env.PORT;
 const setupSSL = require('./setupSSL');
 const SSL = setupSSL();
 
-console.log(SSL);
-
 if (SSL) {
   const https = require('https');
   https
