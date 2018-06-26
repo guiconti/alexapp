@@ -27,7 +27,7 @@ const HelloWorldIntentHandler = {
           && handlerInput.requestEnvelope.request.intent.name === 'GetNewFactIntent';
   },
   handle(handlerInput) {
-      const speechText = 'Hey dude it just works, congratulations! XABLAU';
+      const speechText = 'Hey dude it just works, congratulations! SHABLAU';
 
       return handlerInput.responseBuilder
           .speak(speechText)
