@@ -1,10 +1,10 @@
 {
   "development": {
     "NODE_ENV": "development",
-    "PORT": 3341
+    "PORT": 3200
   },
   "production": {
     "NODE_ENV": "production",
-    "PORT": 443
+    "PORT": 3200
   }
 }
