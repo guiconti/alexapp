@@ -9,4 +9,9 @@ router.get('/', (req, res) => {
   res.status(200).json({ msg: 'Hi!' });
 });
 
+router.post('*', (req, res) => {
+  console.log('Hi');
+  res.status(200).json({ msg: 'hi '});
+})
+
 module.exports = router;
