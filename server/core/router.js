@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 router.use(bodyParser.json());
 
-const Alexa = require('alexa-sdk');
+const Alexa = require('ask-sdk');
 
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
