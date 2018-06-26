@@ -24,14 +24,14 @@ const LaunchRequestHandler = {
 const HelloWorldIntentHandler = {
   canHandle(handlerInput) {
       return handlerInput.requestEnvelope.request.type === 'IntentRequest'
-          && handlerInput.requestEnvelope.request.intent.name === 'HelloWorldIntent';
+          && handlerInput.requestEnvelope.request.intent.name === 'GetNewFactIntent';
   },
   handle(handlerInput) {
-      const speechText = 'Hello World!';
+      const speechText = 'Why don\'t you google yourself?';
 
       return handlerInput.responseBuilder
           .speak(speechText)
-          .withSimpleCard('Hello World', speechText)
+          .withSimpleCard('Google it', speechText)
           .getResponse();
   }
 };
@@ -86,8 +86,8 @@ const ErrorHandler = {
     console.log(`Error handled: ${error.message}`);
 
     return handlerInput.responseBuilder
-      .speak('Sorry, I can\'t understand the command. Please say again.')
-      .reprompt('Sorry, I can\'t understand the command. Please say again.')
+      .speak('Not today, son.')
+      .reprompt('Not today, son.')
       .getResponse();
   },
 };
